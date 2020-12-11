@@ -9,4 +9,8 @@ COPY run_checkpoints.sh /run_checkpoints.sh
 COPY build_gh_action_site.py /build_gh_action_site.py
 RUN chmod u+x /run_checkpoints.sh
 
+# Ensure that additional requirements such as xlrd are installed (not in default GE-image)
+COPY requirements.txt /requirements.txt
+RUN pip install -r requirements.txt
+
 ENTRYPOINT ["/bin/bash", "/run_checkpoints.sh"]
