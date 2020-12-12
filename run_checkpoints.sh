@@ -15,7 +15,7 @@ unset GE_HOME
 if [[ ! -z "$INPUT_GE_HOME" ]]; then
     cd ${INPUT_GE_HOME}
 fi
-python3 -c "import json; import os; f = open(os.environ['GOOGLE_APPLICATION_CREDENTIALS']); print(json.load(f))"
+python3 -c "import os; print(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])"
 great_expectations suite list || (echo "::error::An error occured while loading your great expectations project. See action logs for more detail." && exit 1);
 
 # Loop through checkpoints
