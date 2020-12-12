@@ -15,8 +15,6 @@ unset GE_HOME
 if [[ ! -z "$INPUT_GE_HOME" ]]; then
     cd ${INPUT_GE_HOME}
 fi
-echo $(ls)
-python3 -c "import os; print(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])"
 
 great_expectations suite list || (echo "::error::An error occured while loading your great expectations project. See action logs for more detail." && exit 1);
 
