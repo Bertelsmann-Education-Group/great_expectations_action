@@ -2,7 +2,7 @@
 
 # Validate That Required Inputs Were Supplied
 function check_env() {
-    if [ -z $(eval echo "\$$1") ]; then
+    if [ -z "$(eval echo "\$$1")" ]; then
         echo "Variable $1 not found.  Exiting..."
         exit 1
     fi
