@@ -1,3 +1,4 @@
-great_expectations==0.11.5
-pandas==1.0.5
+# great_expectations==0.11.5 -- Appropriating this file for Bertelsmann purposes
+# pandas==1.0.5  -- Appropriating this file for Bertelsmann purposes
 xlrd==1.2.0
+gcsfs==0.7.1
