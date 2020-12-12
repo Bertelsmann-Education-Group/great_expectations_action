@@ -9,6 +9,7 @@ function check_env() {
 }
 
 check_env "INPUT_CHECKPOINTS"
+check_env "GOOGLE_APPLICATION_CREDENTIALS"
 unset GE_HOME
 
 if [[ ! -z "$INPUT_GE_HOME" ]]; then
