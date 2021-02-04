@@ -1,4 +1,4 @@
-# great_expectations==0.11.5 -- Appropriating this file for Bertelsmann purposes
-# pandas==1.0.5  -- Appropriating this file for Bertelsmann purposes
-openpyxl==3.0.5
+great_expectations==0.13.8
+pandas==1.2.1
+openpyxl==3.0.6
 gcsfs==0.7.1
