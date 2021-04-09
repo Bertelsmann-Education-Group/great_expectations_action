@@ -49,7 +49,7 @@ def main():
 
     print(f"Building docs for site: {action_site_name}")
 
-    validation_store = context.stores["validations_store"]
+    validation_store = context.stores["validations_GCS_store"]
     if not isinstance(validation_store.store_backend, TupleFilesystemStoreBackend):
         # TODO the action will likely need to run entirely in python so an ephemeral
         #  validation store can be used if desired.
